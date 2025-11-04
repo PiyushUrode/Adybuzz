@@ -1,0 +1,338 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+background-image: url('./assets/logo/bg1.jpg');
+  --w3m-accent-color: #f019de !important;
+  --w3m-accent-color:#41d3c5 !important ;
+  --w3m-background-color: #f019de  !important;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+
+}
+/* Global styles for smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+
+img {
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+}
+
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+      @font-face {
+        font-family: 'Quantico';
+        src: url('../src/assets/font/Istok_Web/IstokWeb-Regular.ttf') format('truetype'),
+             url('../src/assets/font/Istok_Web/IstokWeb-Bold.ttf') format('truetype'),
+            }
+
+            h1 , h2 {
+              font-family: 'IstokWeb';
+        src: 
+             url('../src/assets/font/Istok_Web/IstokWeb-Regular.ttf') format('truetype'),            }
+
+             p {
+              font-family: 'IstokWeb', sans-serif;
+              color: #C7C7C7; /* Paragraph color */
+              line-height: 1.6; /* Adjust line-height as needed */
+              word-spacing: 0.1em; /* Adjust word-spacing as needed */
+            }
+    
+
+
+.content {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
+
+
+.header-background {
+  background-image: url('./assets/logo/bg1.jpg'); /* Webpack/Vite resolves this path automatically */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: 50px; */
+ 
+}
+
+
+.header-background2 {
+  background-image: url('./assets/heroimage.png'); /* Webpack/Vite resolves this path automatically */
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  /* background-position: 50px; */
+ 
+}
+
+
+
+.ecobgimg1 {
+  background-image: url('./assets/move2earn/website.jpg'); /* Webpack/Vite resolves this path automatically */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+
+
+
+.ecobgimg2 {
+  background-image: url('./assets/move2earn/ui.jpg'); /* Webpack/Vite resolves this path automatically */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+
+
+.ecobgimg3 {
+  background-image: url('./assets/move2earn/facebook.jpg'); /* Webpack/Vite resolves this path automatically */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+
+
+
+
+.ecobgimg4 {
+  background-image: url('./assets/move2earn/social.jpg'); /* Webpack/Vite resolves this path automatically */
+  background-size: cover;
+  
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+
+
+
+.ecobgimg5 {
+  background-image: url('./assets/Image/adybuzzimage/leads.jpg'); /* Webpack/Vite resolves this path automatically */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+
+
+
+.ecobgimg6 {
+  background-image: url('./assets/move2earn/seo.jpg'); /* Webpack/Vite resolves this path automatically */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+
+.ecobgimg7 {
+  background-image: url('./assets/move2earn/email.jpg'); /* Webpack/Vite resolves this path automatically */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+
+
+
+
+.scroll-container {
+  scroll-behavior: smooth; /* Smooth scrolling */
+  overflow-x: auto;
+  display: flex;
+}
+
+
+
+/* presale coming sonn */
+@keyframes load {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+    float: right;
+  }
+}
+
+.animate-load {
+  animation: load 3s linear infinite;
+  animation-delay: 2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+}
+.border-gradient-purple {
+  border-image-source: conic-gradient(from 90deg, #ED00FF 0%, #00E1FF 37%, #FEAB1D 57%, #ED00FF 100%);
+}
+.border-gradient-green {
+  border-image-source: linear-gradient(150deg, #fff0 0%, #ffffffe5 52% ,  #fff0 98%);
+}
+
+
+/* contract */
+.border-gradient-two {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 10px;
+}
+.border-gradient-red {
+  border-image-source: linear-gradient(90deg, rgba(254, 171, 29, 0.5) 0%, rgba(237, 0, 255, 0.5) 50%, rgba(0, 225, 255, 0.5) 100%);
+}
+
+
+/* hero buynow button animation keyframe */
+
+@keyframes rotate-gradient {
+  0% {
+    background-position: 0% 20%;
+  }
+  25% {
+    background-position: 20% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-rotate-gradient {
+  background: conic-gradient(from 90deg, #ED00FF 0%, #00E1FF 37%, #FEAB1D 57%, #ED00FF 100%);
+  background-size: 200% 200%;
+  animation: rotate-gradient 2s linear infinite;
+}
+
+/* topggle popup */
+
+/* Add this CSS to handle the popup overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #090909;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Fix iOS Safari flip issue */
+.perspective {
+  perspective: 1000px;
+}
+
+.transform-style {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.hover\:rotate-y-180:hover {
+  transform: rotateY(180deg);
+}
+
+/* Optional: disable hover flip on mobile to avoid glitch */
+@media (hover: none) {
+  .hover\:rotate-y-180:hover {
+    transform: none;
+  }
+}
